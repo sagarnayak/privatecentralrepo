@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sagar</groupId>
-    <artifactId>libraray001</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
-    <name>libraray001</name>
-    <description>libraray001</description>
+    <artifactId>application001</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>application001</name>
+    <description>application001</description>
     <packaging>jar</packaging>
     <properties>
         <java.version>11</java.version>
@@ -37,6 +37,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sagar</groupId>
+            <artifactId>libraray001</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -46,16 +51,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>exec</classifier>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -78,11 +73,5 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>library001</id>
-            <name>library001 package</name>
-            <url>https://maven.pkg.github.com/sagarnayak/privatecentralrepo</url>
-        </repository>
-    </distributionManagement>
+
 </project>
