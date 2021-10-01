@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.sagar</groupId>
     <artifactId>libraray001</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>libraray001</name>
     <description>libraray001</description>
     <packaging>jar</packaging>
