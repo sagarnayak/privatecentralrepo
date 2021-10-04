@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.sagar</groupId>
     <artifactId>libraray001</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>libraray001</name>
     <description>libraray001</description>
     <packaging>jar</packaging>
@@ -48,9 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
+                        <id>repackage</id>
                         <configuration>
                             <classifier>exec</classifier>
                         </configuration>
